@@ -13,5 +13,13 @@ public class JFreundLib {
             int len3=word3.length();
             return word1;
         }
+        public static String quadSolver(Double a, Double b, Double c){
+            if(((b^2)-(4*a*c)<0){
+                return ""
+            }
+            else{
+                return
+            }
+        }
 
 }
