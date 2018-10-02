@@ -7,18 +7,27 @@ public class JFreundLib {
             }
             return (word.equals(rev));
         }
+
         public static String stringUnion(String word1, String word2, String word3){
             int len1=word1.length();
             int len2=word2.length();
             int len3=word3.length();
             return word1;
         }
+
         public static String quadSolver(Double a, Double b, Double c){
-            if(((b^2)-(4*a*c)<0){
-                return ""
+            if(((b^2)-(4*a*c))<0){
+                return "The roots are imaginary.";
             }
             else{
-                return
+                double pos=((-b)+((b^2)-(4*a*c))^(1/2))/(2*a);
+                double neg=((-b)-((b^2)-(4*a*c))^(1/2))/(2*a);
+                if(pos==neg){
+                    return "The root is"+pos;
+                }
+                else{
+                    return "The roots are"+pos+"and"+neg;
+                }
             }
         }
 
