@@ -12,16 +12,23 @@ public class JFreundLib {
             int len1=word1.length();
             int len2=word2.length();
             int len3=word3.length();
+            String
+            if()
             return word1;
+
+
+
+
+
         }
 
         public static String quadSolver(Double a, Double b, Double c){
-            if(((b^2)-(4*a*c))<0){
+            if(((Math.pow(b,2.0))-(4*a*c))<0){
                 return "The roots are imaginary.";
             }
             else{
-                double pos=((-b)+((b^2)-(4*a*c))^(1/2))/(2*a);
-                double neg=((-b)-((b^2)-(4*a*c))^(1/2))/(2*a);
+                double pos=((-b)+((Math.pow(b,2.0))-(4*a*c))^(1/2))/(2*a);
+                double neg=((-b)-((Math.pow(b,2.0))-(4*a*c))^(1/2))/(2*a);
                 if(pos==neg){
                     return "The root is"+pos;
                 }
