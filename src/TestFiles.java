@@ -7,7 +7,10 @@ public class TestFiles {
         System.out.println(JFreundLib.isPalindrome("racecar"));
         System.out.println(JFreundLib.isPalindrome("no"));
 
-        System.out.println(JFreundLib.quadSolver(1.0, 0.0,1.0 ));
+        System.out.println(JFreundLib.quadSolver(1.0, -5.0,-6.0 ));
         System.out.println(JFreundLib.quadSolver(1.0, -5.0,6.0 ));
+
+        System.out.println(JFreundLib.leastCommonMultiple());
+        System.out.println(JFreundLib.leastCommonMultiple());
     }
 }
