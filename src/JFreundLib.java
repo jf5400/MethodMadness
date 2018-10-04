@@ -23,7 +23,8 @@ public class JFreundLib {
         int len2=word2.length();
         int len3=word3.length();
         String unionwords="";
-        return word1;
+
+        return unionwords;
     }
 
     public static String quadSolver(Double a, Double b, Double c){
@@ -37,6 +38,17 @@ public class JFreundLib {
             return "The roots are "+pos+" and "+neg;
         }
     }
+
+    public static int leastCommonMultiple(int num1, int num2, int num3){
+        int i=1;
+        while((i%num1!=0)&&()&&){
+
+
+        }
+    }
+
+
+
 
     public static int leastCommonMultiple(int num1, int num2, int num3){
         int multiple=1;
@@ -62,7 +74,7 @@ public class JFreundLib {
         }
         int m=1;
         for(int k=0; k<factors.length(); k++){
-            int ran=factors.substring(k,k+1);
+            //int ran=factors.substring(k,k+1);
             multiple=multiple*m;
         }
         return multiple;
