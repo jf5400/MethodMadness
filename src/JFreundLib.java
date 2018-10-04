@@ -1,41 +1,41 @@
 public class JFreundLib {
 
-    public static Boolean isPalindrome(String word){
-        String rev="";
-        for(int i=word.length(); i>-1; i--){
-            rev = rev + word.substring(i,i+1);
+        public static Boolean isPalindrome(String word){
+            String rev="";
+            for(int i=word.length(); i>0; i--){
+                rev=rev+word.substring(i-1,i);
+            }
+            return (word.equals(rev));
         }
-        if(word.compareTo(rev)){
-            return true;
+
+        public static String stringUnion(String word1, String word2, String word3){
+            int len1=word1.length();
+            int len2=word2.length();
+            int len3=word3.length();
+            String
+            if()
+            return word1;
+
+
+
+
+
         }
-        else{
-            return false;
+
+        public static String quadSolver(Double a, Double b, Double c){
+            if(((Math.pow(b,2.0))-(4*a*c))<0){
+                return "The roots are imaginary.";
+            }
+            else{
+                double pos=((-b)+((Math.pow(b,2.0))-(4*a*c))^(1/2))/(2*a);
+                double neg=((-b)-((Math.pow(b,2.0))-(4*a*c))^(1/2))/(2*a);
+                if(pos==neg){
+                    return "The root is"+pos;
+                }
+                else{
+                    return "The roots are"+pos+"and"+neg;
+                }
+            }
         }
-    }
-
-    public static String vigCipher(String Message, String Key){
-        String alph="abcdefghijklmnopqrstuvwxyz";
-        String newmessage="";
-        for(int i=0; i<Message.length(); i++){
-            int one =alph.indexOf(Message.substring(i, i+1));
-            newmessage+=alph.substring(one+Key);
-        }
-        return Message;
-    }
-
-    public static String stringUnion(String word1, String word2, String word3){
-        int len1=word1.length();
-        int len2=word2.length();
-        int len3=word3.length();
-        return word1;
-    }
-
-    public static String quadSolver(Double a, Double b, Double c){
-        return;
-    }
-
-    public static int leastCommonMultiple(int num1, int num2, int num3){
-       
-    }
 
 }
