@@ -3,6 +3,7 @@ public class TestFiles {
     public static void main(String[] args){
 
         System.out.println("Hello Method Madness");
+        System.out.println();
 
         System.out.println(JFreundLib.isPalindrome("racecar"));
         System.out.println(JFreundLib.isPalindrome("no"));
@@ -12,8 +13,12 @@ public class TestFiles {
         System.out.println(JFreundLib.cutOut("really", "ll"));
         System.out.println();
 
-        //System.out.println(JFreundLib.vigCipher("lm", "ab"));
-        //System.out.println(JFreundLib.vigCipher("attackatdawn", "iozqghiozqgh"));
+        System.out.println(JFreundLib.vigCipher("lm", "ab"));
+        System.out.println(JFreundLib.vigCipher("attackatdawn", "iozqghiozqgh"));
+
+        System.out.println(JFreundLib.stringUnion("hello", "hola", "nihao"));
+        System.out.println(JFreundLib.stringUnion("jaz","zame","jam"));
+        System.out.println();
 
         System.out.println(JFreundLib.sumUpTo(5));
         System.out.println(JFreundLib.sumUpTo(10));
@@ -22,6 +27,11 @@ public class TestFiles {
         System.out.println(JFreundLib.quadSolver(1.0, 4.0,4.0 ));
         System.out.println(JFreundLib.quadSolver(1.0, -5.0,6.0 ));
         System.out.println();
+
+        System.out.println(JFreundLib.primePrinter(2));
+        System.out.println(JFreundLib.primePrinter(4));
+        System.out.println();
+
 
         System.out.println(JFreundLib.leastCommonMultiple(2, 3, 5));
         System.out.println(JFreundLib.leastCommonMultiple(5, 6, 3));
