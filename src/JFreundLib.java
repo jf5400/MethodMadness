@@ -42,7 +42,7 @@ public class JFreundLib {
         if(num==0){
             return "";
         }
-        String primelist="2";
+        String primelist="2 ";
         int j=3;
         int determine=0;
         while(num-1>0){
@@ -53,9 +53,9 @@ public class JFreundLib {
             }
             if(determine==0){
                 num = num-1;
-                primelist = primelist + j;
+                primelist = primelist + j+" ";
             }
-            j+=1;
+            j=j+1;
             determine=0;
         }
         return primelist;
