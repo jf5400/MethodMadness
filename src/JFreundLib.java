@@ -3,8 +3,11 @@ public class JFreundLib {
     //String Methods
 
     /**
-     * @param word
-     * @return a boolean
+     * Makes a list of the reverse of word.
+     * Checks if both lists are equal.
+     *
+     * @param word the word that is being checked if it's a Palidrome
+     * @return a boolean result about whether word is a Palidrome or not
      */
     public static Boolean isPalindrome(String word) {
         String rev = "";
@@ -15,9 +18,25 @@ public class JFreundLib {
     }
 
     /**
-     * @param mainStr
-     * @param subStr
-     * @return
+     * Puts date into a new format.
+     *
+     * @param date a string in the format “mm/dd/yyyy”
+     * @return the string in the format “dd–mm-yyyy”
+     */
+    public static String dateStr(String date) {
+        String month=date.substring(0,2);
+        String days=date.substring(3,5);
+        String year=date.substring(6);
+        return days+"-"+month+"-"+year;
+    }
+
+    /**
+     * Finds the length of subStr and the first time subStr occurs in mainStr.
+     * Removes the characters from index to length-1.
+     *
+     * @param mainStr the string to search through
+     * @param subStr the string being searched for
+     * @return mainStr with subStr removed
      */
     public static String cutOut(String mainStr, String subStr) {
         int start = mainStr.indexOf(subStr);
@@ -27,8 +46,10 @@ public class JFreundLib {
 
     //Math Methods
     /**
-     * @param n
-     * @return
+     * Adds together every number from 0 to n.
+     *
+     * @param n number to sum up to
+     * @return sum of the numbers from 0 to n
      */
     public static int sumUpTo(int n) {
         int sum = 0;
@@ -38,6 +59,12 @@ public class JFreundLib {
         return sum;
     }
 
+    /**
+     * 
+     *
+     * @param num the number of primes that are being printed
+     * @return the first num prime numbers.
+     */
     public static String primePrinter(int num){
         if(num==0){
             return "";

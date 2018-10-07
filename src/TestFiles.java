@@ -13,8 +13,13 @@ public class TestFiles {
         System.out.println(JFreundLib.cutOut("really", "ll"));
         System.out.println();
 
+        System.out.println(JFreundLib.dateStr("01/08/1999"));
+        System.out.println(JFreundLib.dateStr("07/27/2001"));
+        System.out.println();
+
         System.out.println(JFreundLib.vigCipher("lm", "ab"));
         System.out.println(JFreundLib.vigCipher("attackatdawn", "iozqghiozqgh"));
+        System.out.println();
 
         System.out.println(JFreundLib.stringUnion("hello", "hola", "nihao"));
         System.out.println(JFreundLib.stringUnion("jaz","zame","jam"));
@@ -29,7 +34,7 @@ public class TestFiles {
         System.out.println();
 
         System.out.println(JFreundLib.primePrinter(2));
-        System.out.println(JFreundLib.primePrinter(4));
+        System.out.println(JFreundLib.primePrinter(10));
         System.out.println();
 
 
