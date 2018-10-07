@@ -4,7 +4,7 @@ public class JFreundLib {
 
     /**
      * @param word
-     * @return
+     * @return a boolean
      */
     public static Boolean isPalindrome(String word) {
         String rev = "";
