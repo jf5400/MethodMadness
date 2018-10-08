@@ -104,7 +104,9 @@ public class JFreundLib {
             String mess = Message.substring(i, i + 1);
             int add = alph.indexOf(key);
             int start = alph.indexOf(mess);
-            newmessage += alph.substring(start + add, start + add+1);
+            if(start!=-1) {
+                newmessage += alph.substring(start + add, start + add + 1);
+            }
         }
         return newmessage;
     }
