@@ -1,7 +1,6 @@
+//Jazmine Freund
 public class JFreundLib {
-
     //String Methods
-
     /**
      * Makes a list of the reverse of word.
      * Checks if both lists are equal.
@@ -115,9 +114,9 @@ public class JFreundLib {
      * Search through word3 for letters that match those in word2.
      * Check if the matched letter is already in the string keeping track of matched letters.
      *
-     * @param word1 the
-     * @param word2
-     * @param word3
+     * @param word1 the first word being compared to the other two words
+     * @param word2 the second word being compared to the other two words
+     * @param word3 the third word being compared to the other two words
      * @return the number of unique letters shared by at least two of the words
      */
     public static int stringUnion(String word1, String word2, String word3) {
