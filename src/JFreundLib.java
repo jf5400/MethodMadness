@@ -60,7 +60,8 @@ public class JFreundLib {
     }
 
     /**
-     * 
+     * Subtracts 1 from num every time there is a prime.
+     * Determines if number is prime by doing mod every numer from 2 to n-1.
      *
      * @param num the number of primes that are being printed
      * @return the first num prime numbers.
@@ -87,12 +88,14 @@ public class JFreundLib {
         }
         return primelist;
     }
-    //Extra Credit
 
+    //Extra Credit
     /**
-     * @param Message
-     * @param Key
-     * @return
+     * Shifts each charcater in Message by the corresponding character's position on alph.
+     *
+     * @param Message the message being encrypted
+     * @param Key the key used to encrypt the message
+     * @return encypted message using the Vigenere Cipher
      */
     public static String vigCipher(String Message, String Key) {
         String alph = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
@@ -108,10 +111,14 @@ public class JFreundLib {
     }
 
     /**
-     * @param word1
+     * Searches through word2 and word3 for letters that match those in word1.
+     * Search through word3 for letters that match those in word2.
+     * Check if the matched letter is already in the string keeping track of matched letters.
+     *
+     * @param word1 the
      * @param word2
      * @param word3
-     * @return
+     * @return the number of unique letters shared by at least two of the words
      */
     public static int stringUnion(String word1, String word2, String word3) {
         String unionwords = "";
@@ -137,10 +144,13 @@ public class JFreundLib {
         return unionwords.length();
     }
     /**
-     * @param a
-     * @param b
-     * @param c
-     * @return
+     * Checks if the discriminant of the quadratic is less than 0 to see if roots are imaginary.
+     * If the roots aren't imaginary plugs in a, b, and c in the quadratic formula.
+     *
+     * @param a th coefficient of x^2
+     * @param b the coefficient of x
+     * @param c the constant
+     * @return a string with the roots of the quadratic equation or explaining that the roots are imaginary
      */
     public static String quadSolver(Double a, Double b, Double c) {
         double underparen = Math.pow(b, 2.0) - (4 * a * c);
@@ -158,10 +168,12 @@ public class JFreundLib {
     }
 
     /**
-     * @param num1
-     * @param num2
-     * @param num3
-     * @return
+     * Do i mod num1, num2, and num3 until the result is 0 for all three.
+     *
+     * @param num1 one of the numbers that needs to be a factor of the result
+     * @param num2 one of the numbers that needs to be a factor of the result
+     * @param num3 one of the numbers that needs to be a factor of the result
+     * @return the least commone multiple shared by three numbers
      */
     public static int leastCommonMultiple(int num1, int num2, int num3) {
         int i = 1;

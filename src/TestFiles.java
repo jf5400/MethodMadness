@@ -18,7 +18,7 @@ public class TestFiles {
         System.out.println();
 
         System.out.println(JFreundLib.vigCipher("lm", "ab"));
-        System.out.println(JFreundLib.vigCipher("attackatdawn", "iozqghiozqgh"));
+        System.out.println(JFreundLib.vigCipher("att ackatdawn", "iozqghiozqgh"));
         System.out.println();
 
         System.out.println(JFreundLib.stringUnion("hello", "hola", "nihao"));
